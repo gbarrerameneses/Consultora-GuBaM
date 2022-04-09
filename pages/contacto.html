@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./../css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <title>Contacto</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <input type="checkbox" id="check">
+            <label for="check" class="checkbtn">
+                <i class="fas fa-bars"></i>
+            </label>
+            <a href="./../index.html" class="enlace" data-aos="fade-right">
+                <img src="./../assets/icons/logoHeader.svg" alt="" class="logo">
+                <p>GuBaM</p>
+            </a>
+            <ul data-aos="fade-down">
+                <li class="dply"><a href="./../index.html">Inicio</a></li>
+                <li><a href="./../pages/nosotros.html">Nosotros</a></li>
+                <li><a href="./../pages/cursos.html">Cursos</a></li>
+                <li><a href="./../pages/industrias.html">Industrias</a></li>
+                <li><a href="#">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <!--Inicio Banner-->
+        <section>
+            <div class="fondo">
+                <div class="img-header" style="background-image: url(./../assets/img/banner-contacto.jpg);"></div>
+                <div class="texto-header">
+                    <h2 data-aos="fade-down"
+                    data-aos-easing="linear"
+                    data-aos-duration="1000">Contacto</h2>
+                </div>
+            </div>
+        </section>
+        <!--Fin Banner-->
+        <!--Inicio Title Contacto-->
+        <section>
+            <div class="titleIndustria" data-aos="flip-up">
+                <h2>Contáctanos</h2>
+            </div>
+            <div class="imgContact">
+                <div class="container">
+                    <div class="imgcContact" data-aos="fade-right">
+                        <img src="./../assets/icons/contactoCall.svg" alt="Llamada por teléfono">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--Fin Title Contacto-->
+        <!--Inicio Form-->
+        <section>
+            <article class="servicios">
+                <div class="container">
+                        <form action="" class="formIcon">
+                            <fieldset>
+                               <div data-aos="fade-right">
+                                    <img src="./../assets/icons/contactoUser.svg" alt="Usuario">
+                                    <input type="text" placeholder="Nombre*">
+                               </div>
+                               <div data-aos="fade-right">
+                                    <img src="./../assets/icons/contactoMail.svg" alt="Email">
+                                    <input type="text" placeholder="Email*">
+                               </div>
+                                <div data-aos="fade-right">
+                                    <img src="./../assets/icons/contactoPhone.svg" alt="Teléfono">
+                                    <input type="text" placeholder="Teléfono*">
+                                </div>
+                            </fieldset>
+                            <fieldset>
+                                <div data-aos="fade-right" class="mtHelpIcon">
+                                    <img src="./../assets/icons/contactoHelp.svg" alt="Ayuda">
+                                    <textarea name="" id="" cols="30" rows="7" placeholder="¿Cómo podemos ayudarle?"></textarea>
+                                </div>
+                                <button class="btn-green btn-center" data-aos="zoom-in"><a href="/">Enviar</a></button>
+                            </fieldset>
+                        </form>
+                </div>
+            </article>
+        </section>
+        <!--Fin Form-->
+    </main>
+    <footer>
+        <div class="container fContainer">
+            <div class="infoFooter" data-aos="flip-up">
+               <div class="footerLogo" >
+                    <img src="./../assets/icons/logoFooter.svg" alt="">
+                    <p>GuBaM</p>
+                </div>
+                <p>Teléfono: +52 (55) 4000 9000</p>
+                <p>Email: atencion@gubam.com</p>
+            </div>
+            <div class="footerMenu" data-aos="zoom-in">
+                <ul>
+                    <li><a href="./../pages/nosotros.html">Nosotros</a></li>
+                    <li><a href="./../pages/cursos.html">Cursos</a></li>
+                    <li><a href="./../pages/industrias.html">Industrias</a></li>
+                    <li><a href="./../pages/contacto.html">Contacto</a></li>
+                </ul>
+                <div class="redesSociales" data-aos="zoom-in">
+                    <a href="/"><img src="./../assets/icons/instagram.svg" alt="instagram"></a>
+                    <a href="/"><img src="./../assets/icons/facebook.svg" alt="facebook"></a>
+                    <a href="/"><img src="./../assets/icons/linkedin.svg" alt="linkedin"></a>
+                    <a href="/"><img src="./../assets/icons/github.svg" alt="github"></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>© 2022 Copyright all right reserved </p>
+        </div>
+    </footer>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+</html>
