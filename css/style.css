@@ -14,7 +14,7 @@ img {
     width: 100%;
 }
 a {
-    text-decoration: none;
+    text-decoration: none !important;
     cursor: pointer;
 }
 /*Header*/
@@ -36,7 +36,12 @@ nav{
     display: flex;
     font-size: xx-large;
     position: absolute;
-    padding: 20px 50px;
+    padding: 10px 50px;
+    align-items: center;
+    justify-content: center;
+}
+.enlace p {
+    margin-bottom: 0 !important;
 }
 .logo{
     height: 40px;
@@ -117,6 +122,9 @@ nav p {
     margin-top: 15px;
     cursor: pointer;
 }
+.btn a {
+    color: #e5e5db;
+}
 .btn-green a {
     color: #e5e5db;
 }
@@ -160,19 +168,21 @@ section article.servicios {
 }
 .txt-left {
     text-align: initial;
+    padding-right: 15px;
 }
 .txt-right {
     text-align: end;
+    padding-left: 15px;
 }
 .servicios {
     padding: 30px;
 }
-.container {
+/*.container {
     padding-right: 15px;
     padding-left: 15px;
     margin-right: auto;
     margin-left: auto;
-}
+}*/
 .titleServicios,
 .copyright {
     text-align: center;
@@ -308,11 +318,11 @@ section article.servicios {
     outline: none;
 }
 .btn-center {
-    margin: 14px auto;
-    display: flex;
-    padding: 5px 20px;
-    justify-content: center;
-    align-items: center;
+    margin: 14px auto !important;
+    display: flex !important;
+    padding: 5px 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
 }
 .formIcon img {
     width: 8%;
@@ -631,9 +641,9 @@ footer {
     .dply {
         display: none;
     }
-    .container {
+    /*.container {
         width: 750px;
-    }
+    }*/
     .container article div > div {
         width: 50%;
     }
