@@ -205,11 +205,11 @@ section article.servicios {
 }
 /*Main Index Fin*/
 /*Main Nosotros Fin*/
-.valores article  {
+/*.valores article  {
     display: flex;
     justify-content: center;
     align-content: center;
-}
+}*/
 .valores .container article  {
     padding: 0px !important;
 }
@@ -499,9 +499,9 @@ footer {
     .container article.somos {
         padding: 40px 15px;
     }
-    .bckMision {
+    /*.bckMision {
         width: 100%;
-    }
+    }*/
     .valoresTitle h3 {
         text-align: center;
     }
@@ -644,10 +644,10 @@ footer {
     }
     /*.container {
         width: 750px;
-    }*/
+    }
     .container article div > div {
         width: 50%;
-    }
+    }*/
     .container article.cursos,
     .container article.industria,
     .container article.somos {
