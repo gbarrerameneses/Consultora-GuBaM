@@ -61,6 +61,12 @@ nav ul li a{
     padding: 7px 13px;
     border-radius: 3px;
     text-transform: uppercase;
+    text-decoration: none;
+    background-image: linear-gradient(currentColor, currentColor);
+    background-position: 0% 100%;
+    background-repeat: no-repeat;
+    background-size: 0% 2px;
+    transition: background-size .5s;
 }
 nav p {
     color: #e5e5e5;
@@ -115,18 +121,23 @@ nav p {
     letter-spacing: 3px;
 }
 .btn-green {
-    background-color: #00a94d;
+    background-color: #00a94d !important;
     border-radius: 15px;
     padding: 5px 10px;
-    border: 1px solid #00a94d;
+    border: 1px solid #00a94d !important;
     margin-top: 15px;
     cursor: pointer;
 }
-.btn a {
-    color: #e5e5db;
-}
 .btn-green a {
     color: #e5e5db;
+}
+.btn-green:hover {
+    background-color: #1f253d !important;
+    border: 1px solid #00a94d !important;
+    color: #00a94d !important;
+}
+.btn-green a:hover {
+    color: #00a94d;
 }
 .img-header {
     height: 500px;
@@ -148,16 +159,14 @@ section article.servicios {
     background-color: #1F253D;
     padding: 35px 0;
 }
-/*.container article > div {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}*/
 .img-right img {
     border-radius: 20px 0 20px 20px;
 }
 .img-left img {
     border-radius: 0 20px 20px 20px;
+}
+.txt-center {
+    margin: auto !important;
 }
 .txt-left, .txt-right {
     color: #1F253D;
@@ -177,12 +186,6 @@ section article.servicios {
 .servicios {
     padding: 30px;
 }
-/*.container {
-    padding-right: 15px;
-    padding-left: 15px;
-    margin-right: auto;
-    margin-left: auto;
-}*/
 .titleServicios,
 .copyright {
     text-align: center;
@@ -205,11 +208,6 @@ section article.servicios {
 }
 /*Main Index Fin*/
 /*Main Nosotros Fin*/
-/*.valores article  {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-}*/
 .valores .container article  {
     padding: 0px !important;
 }
@@ -324,6 +322,9 @@ section article.servicios {
     justify-content: center !important;
     align-items: center !important;
 }
+.btn-help:hover {
+    border:solid 1px #00a94d !important;
+}
 .formIcon img {
     width: 8%;
     margin-right: 8px;
@@ -414,6 +415,9 @@ footer {
 .footerMenu ul li a {
     color: #1f253d;
 }
+.footerMenu ul li a:hover {
+    color: #06B471;
+}
 .copyright {
     background-color: #06B471;
     padding: 10px 0;
@@ -472,17 +476,20 @@ footer {
         font-size: 30px;
         font-weight: 700;
         letter-spacing: 3px;
+        text-decoration: none;
+        background-image: linear-gradient(currentColor, currentColor);
+        background-position: 0% 100%;
+        background-repeat: no-repeat;
+        background-size: 0% 2px;
+        transition: background-size .5s;
     }
-    li a:hover, li a.active{
-        background: none;
+    nav ul li a:hover, nav ul li a:focus, nav ul li a:active {
+        background-size: 100% 2px;
         color: #00a94d;
     }
     #check:checked ~ ul{
         left:0;
     }
-    /*.container article > div {
-        flex-direction: column;
-    }*/
     .txt-left,
     .txt-right {
         text-align: center;
@@ -499,9 +506,6 @@ footer {
     .container article.somos {
         padding: 40px 15px;
     }
-    /*.bckMision {
-        width: 100%;
-    }*/
     .valoresTitle h3 {
         text-align: center;
     }
@@ -509,16 +513,7 @@ footer {
         width: 90%;
     }
 }
-@media (min-width : 579px) and  (max-width : 679px) {
-    .cClientes {
-        width: 90%;
-        margin: auto;
-    }
-}
 @media (max-width : 679px) {
-    /*.serviciosCard {
-        margin: 30px auto;
-    }*/
     .cServicios > div  {
         width: 250px;
         margin: 30px auto;
@@ -549,14 +544,10 @@ footer {
     }
     .mtHelpIcon {
         margin-top: 20px;
-        /*justify-content: center;*/
     }
     .container .area > div h3 {
         padding: 30px 0;
     }
-    /*.footerMenu {
-        width: 210px;
-    }*/
     .footerMenu ul {
         align-items: start;
         padding-left: 0 !important;
@@ -576,16 +567,6 @@ footer {
     }
 }
 @media (min-width : 680px) {
-    /*.cServicios {
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        margin-top: 30px;
-        flex-wrap: wrap;
-    }
-    .cServicios > div  {
-        width: 35%;
-    }*/
     .area > div {
         width: 50%;
         color: #1F253D;
@@ -630,7 +611,6 @@ footer {
         width: 60%;
     }
     .cClientes {
-        width: 75%;
         margin: auto;
     }
     .cursosTitle img {
@@ -639,15 +619,17 @@ footer {
 }
 /* Medium Devices to Large Devices */
 @media (min-width : 768px) {
+    nav ul li a:hover {
+        color: #1f253d;
+        text-decoration: underline;
+        transition: all .2s;
+    }
+    nav ul li a:hover, nav ul li a:focus {
+        background-size: 100% 2px;
+    }
     .dply {
         display: none;
     }
-    /*.container {
-        width: 750px;
-    }
-    .container article div > div {
-        width: 50%;
-    }*/
     .container article.cursos,
     .container article.industria,
     .container article.somos {
@@ -659,10 +641,8 @@ footer {
     .teamImg {
         background-size: cover;
     }
-}
-/* Medium Devices, Desktops */
-@media (min-width : 768px) and (max-width : 991px) {
-}
-/* Large Devices, Wide Screens */
-@media (min-width : 992px) and (max-width : 1200px) {
+    .cClientes {
+        width: 55%;
+        margin: auto;
+    }
 }
