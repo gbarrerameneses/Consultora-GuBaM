@@ -1,0 +1,56 @@
+/*Main Contacto Inicio*/
+.titleIndustria {
+    text-align: center;
+    padding: 40px 15px;
+    color: #1F253D;
+}
+.imgContact {
+    background-color: #F6FFFC;
+    .imgcContact {
+        width: 70%;
+        margin: auto;
+        padding: 30px 0;
+    }
+}
+.formIcon {
+    display: flex;
+    justify-content: center;
+    padding: 30px 0;
+    fieldset div {
+        display: flex;
+        input {
+            width: 90%;
+            border-radius: 10px;
+            margin: 15px auto;
+            padding: 12px 0 12px 12px;
+            outline: none;
+        }
+    }
+}
+.formIcon fieldset textarea {
+    border-radius: 10px;
+    padding: 9px 0 10px 12px;
+    outline: none;
+}
+.formIcon img {
+    width: 8%;
+    margin-right: 8px;
+}
+.btn-center {
+    margin: 14px auto !important;
+    display: flex !important;
+    padding: 5px 20px !important;
+    justify-content: center !important;
+    align-items: center !important;
+}
+.btn-help:hover {
+    border:solid 1px #00a94d !important;
+}
+.mtHelpIcon {
+    display: flex;
+    align-items: flex-start;
+    img {
+        display: flex;
+    }
+}
+/*Main Contacto Fin*/

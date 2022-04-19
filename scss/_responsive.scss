@@ -1,0 +1,220 @@
+/***** M O B I L E *****/
+/* Extra Small Devices, Phones */
+@media (max-width : 479px) {
+    .equipoImg {
+        flex-direction: column;
+        article {
+            width: 100%;
+        }
+    }
+    .cursoCard {
+        width: 80%;
+        margin: auto;
+    }
+}
+/* Small Devices, Tablets */
+@media (min-width : 480px) and (max-width : 767px) {
+    .equipoImg article {
+        width: 50%;
+        .teamImg {
+            background-size: contain;
+        }
+    }
+}
+/* Small Devices, Nav */
+@media (max-width : 767px) {
+    .dply, .check-btn, .checkbtn{
+        display: block;
+    }
+    .enlace{
+        padding-left: 20px;
+    }
+    nav ul{
+        position: fixed;
+        width: 100%;
+        height: 100vh;
+        background: #1f253d;
+        top: 80px;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+        li a{
+            font-size: 30px;
+            font-weight: 700;
+            letter-spacing: 3px;
+            &:hover {
+                background-size: 100% 2px;
+                color: #00a94d;
+            }
+            &:focus {
+                background-size: 100% 2px;
+                color: #00a94d;
+            }
+            &:active {
+                background-size: 100% 2px;
+                color: #00a94d;
+            }
+        }
+    }
+    #check:checked ~ ul{
+        left:0;
+    }
+    .txt-left,
+    .txt-right {
+        text-align: center;
+        margin-top: 30px !important;
+    }
+    .txt-left {
+        order: 2;
+    }
+    .img-right {
+        order: 1;
+    }
+    .container article.cursos,
+    .container article.industria,
+    .container article.somos {
+        padding: 40px 15px;
+    }
+    .valoresTitle h3 {
+        text-align: center;
+    }
+    .fContainer {
+        width: 90%;
+    }
+}
+@media (max-width : 679px) {
+    .cServicios > div  {
+        width: 250px;
+        margin: 30px auto;
+    }
+    .cServicios,
+    .area,
+    .fContainer,
+    .footerMenu ul {
+        flex-direction: column;
+    }
+    .teamImg {
+        background-size: contain;
+    }
+    .area {
+        text-align: center;
+    }
+    .txtArea {
+        order: 2;
+    }
+    .imgArea {
+        order: 1;
+    }
+    .formIcon {
+        flex-direction: column;
+        fieldset textarea {
+            width: 100%;
+        }
+    }
+    .mtHelpIcon {
+        margin-top: 20px;
+    }
+    .container .area > div h3 {
+        padding: 30px 0;
+    }
+    .footerMenu ul {
+        align-items: start;
+        padding-left: 0 !important;
+        li {
+            padding-top: 15px;
+        }
+        .redesSociales {
+            justify-content: space-around;
+            padding-top: 15px;
+        }
+    }
+    .infoFooter p {
+        padding-top: 15px;
+    }
+    .cursosTitle img {
+        width: 12%;
+    }
+}
+@media (min-width : 680px) {
+    .area > div {
+        width: 50%;
+        color: #1F253D;
+        margin: auto;
+    }
+    .formIcon {
+        align-items: center;
+        fieldset {
+            width: 50%;
+            textarea {
+                width: 90%;
+            }
+        }
+    }
+    .mtHelpIcon img {
+        margin-left: 8px;
+    }
+    .container .area:nth-child(odd) > div p {
+        padding: 30px 0 0 30px;
+    }
+    .container .area:nth-child(even) > div p {
+        padding: 30px 30px 0 0;
+        text-align: end;
+    }
+    .fContainer {
+        align-items: center;
+        .footerMenu {
+            text-align: center;
+            ul {
+                align-items: center;
+                    padding: 40px 0;
+            }
+            li {
+                padding-right: 15px;
+            }
+            .redesSociales {
+                justify-content: end;
+                a img {
+                    width: 60%;
+                }
+            }
+        }
+    }
+    .cClientes {
+        margin: auto;
+    }
+    .cursosTitle img {
+        width: 8%;
+    }
+}
+/* Medium Devices to Large Devices */
+@media (min-width : 768px) {
+    nav ul li {
+        display: inline-block;
+    }
+    nav ul li a:hover {
+        color: #1f253d;
+        text-decoration: underline;
+        transition: all .2s;
+    }
+    nav ul li a:hover, nav ul li a:focus {
+        background-size: 100% 2px;
+    }
+    .dply {
+        display: none;
+    }
+    .container article.cursos,
+    .container article.industria,
+    .container article.somos {
+        padding: 15px;
+    }
+    .equipoImg article {
+        width: 33.33%;
+    }
+    .teamImg {
+        background-size: cover;
+    }
+    .cClientes {
+        width: 55%;
+        margin: auto;
+    }
+}

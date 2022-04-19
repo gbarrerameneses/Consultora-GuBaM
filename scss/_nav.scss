@@ -1,0 +1,60 @@
+/*  Nav*/
+nav{
+    background: #00a94d;
+    height: 80px;
+    width: 100%;
+    position: fixed;
+    z-index: 1;
+    ul{
+        float: right;
+        margin-right: 20px;
+        li{
+            line-height: 80px;
+            margin: 0 5px;
+            a{
+                color: #fff;
+                font-size: 18px;
+                padding: 7px 13px;
+                border-radius: 3px;
+                text-transform: uppercase;
+                text-decoration: none;
+                background-image: linear-gradient(currentColor, currentColor);
+                background-position: 0% 100%;
+                background-repeat: no-repeat;
+                background-size: 0% 2px;
+                transition: background-size .5s;
+            }
+        }
+    }
+    p {
+        color: #e5e5e5;
+    }
+    .enlace{
+        display: flex;
+        font-size: xx-large;
+        position: absolute;
+        padding: 10px 50px;
+        align-items: center;
+        justify-content: center;
+        .logo{
+            height: 40px;
+        }
+        p {
+            margin-bottom: 0 !important;
+        }
+    }
+}
+#check{
+    display: none;
+}
+.checkbtn{
+    font-size: 30px;
+    color: #fff;
+    float: right;
+    line-height: 80px;
+    margin-right: 10px;
+    cursor: pointer;
+    display: none;
+}
+
+

@@ -1,0 +1,64 @@
+/* Index Inicio */
+.container article {
+    padding: 20px ;
+}
+.container article.somos {
+    background-color: #F5F5F5;
+}
+.container article.cursos {
+    background-color: #E3ECEB;
+}
+.container article.industria {
+    background-color: #EEF4F2;
+}
+section article.servicios {
+    background-color: #1F253D;
+    padding: 35px 0;
+}
+.img-right img {
+    border-radius: 20px 0 20px 20px;
+}
+.img-left img {
+    border-radius: 0 20px 20px 20px;
+}
+.txt-center {
+    margin: auto !important;
+}
+.txt-left, .txt-right {
+    color: #1F253D;
+}
+.txt-left p, .txt-right p,
+.titleServicios p {
+    margin-top: 15px;
+}
+.txt-left {
+    text-align: initial;
+    padding-right: 15px;
+}
+.txt-right {
+    text-align: end;
+    padding-left: 15px;
+}
+.servicios {
+    padding: 30px;
+    .titleServicios {
+        text-align: center;
+        color: #F6FFFC;
+    }
+}
+.cServicios > div  {
+    background-color: #F6FAFD;
+    border-radius: 20px;
+    color: #1F253D;
+}
+.serviciosCard {
+    margin-top: 30px !important;
+    padding: 15px;
+    h4 {
+        padding: 15px 0;
+    }
+    .serviciosLogo {
+        width: 30%;
+    }
+}
+/* Index Fin */

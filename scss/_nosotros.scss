@@ -1,0 +1,61 @@
+/* Nosotros Inicio */
+.valores {
+    .container article  {
+        padding: 0px !important;
+    }
+    .bckMision {
+        background-color: #F5F5F5;
+        padding: 30px 0;
+    }
+    .bckVision {
+        background-color: #E3ECEB;
+        padding: 30px 0;
+    }
+    .bckValores {
+        background-color: #EEF4F2;
+        padding: 30px 0;
+    }
+    .valoresImg {
+        margin: auto !important;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        img {
+            width: 70%;
+        }
+    }
+    .valoresTitle {
+        padding: 0 20px;
+        h3 {
+            padding: 20px 0;
+            color: #00a94d;
+        }
+        .valoresTitle p {
+            color: #1F253D;
+        }
+    }
+}
+.equipo {
+    .titleNosotros {
+        text-align: center;
+        padding: 40px 0;
+        color: #1F253D;
+    }
+    .equipoImg {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        flex-wrap: wrap;
+        .teamImg {
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 150px;
+        }
+        h4 {
+            padding: 20px 0;
+            color: #00a94d;
+            text-align: center;
+        }
+    }
+}
+/* Nosotros Fin */
