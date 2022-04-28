@@ -1,23 +1,22 @@
 /*  Nav*/
 nav {
   background: #00a94d;
-  height: 80px;
+  height: 120px;
   width: 100%;
   position: fixed;
   z-index: 1;
+  padding: 10px 0;
 }
 nav ul {
   float: right;
-  margin-right: 20px;
 }
 nav ul li {
-  line-height: 80px;
-  margin: 0 5px;
+  line-height: 90px;
 }
 nav ul li a {
   color: #fff;
   font-size: 18px;
-  padding: 7px 13px;
+  padding: 7px;
   border-radius: 3px;
   text-transform: uppercase;
   text-decoration: none;
@@ -31,15 +30,10 @@ nav p {
   color: #e5e5e5;
 }
 nav .enlace {
-  display: flex;
-  font-size: xx-large;
   position: absolute;
-  padding: 10px 50px;
-  align-items: center;
-  justify-content: center;
 }
-nav .enlace .logo {
-  height: 40px;
+nav .enlace img.logo {
+  width: 100px !important;
 }
 nav .enlace p {
   margin-bottom: 0 !important;
@@ -405,8 +399,7 @@ footer {
 }
 footer .fContainer {
   display: flex;
-  justify-content: space-between;
-  padding: 60px 0;
+  padding: 30px 15px;
 }
 footer .fContainer .footerLogo {
   width: 30%;
@@ -479,7 +472,7 @@ footer .copyright p {
     width: 100%;
     height: 100vh;
     background: #1f253d;
-    top: 80px;
+    top: 120px;
     left: -100%;
     text-align: center;
     transition: all 0.5s;
