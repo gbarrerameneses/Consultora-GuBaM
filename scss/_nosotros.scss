@@ -3,17 +3,18 @@
     .container article  {
         padding: 0px !important;
     }
+    // Extends
     .bckMision {
-        background-color: #F5F5F5;
+        background-color: $bckgrndSomos;
         padding: 30px 0;
     }
     .bckVision {
-        background-color: #E3ECEB;
-        padding: 30px 0;
+        @extend .bckMision;
+        background-color: $bckgrndCursos;
     }
     .bckValores {
-        background-color: #EEF4F2;
-        padding: 30px 0;
+        @extend .bckMision;
+        background-color: $bckgrndIndustria;
     }
     .valoresImg {
         margin: auto !important;
@@ -28,10 +29,10 @@
         padding: 0 20px;
         h3 {
             padding: 20px 0;
-            color: #00a94d;
+            color: $colorVerde;
         }
-        .valoresTitle p {
-            color: #1F253D;
+        p {
+            color: $colorAzul;
         }
     }
 }
@@ -39,7 +40,7 @@
     .titleNosotros {
         text-align: center;
         padding: 40px 0;
-        color: #1F253D;
+        color: $colorAzul;
     }
     .equipoImg {
         display: flex;
@@ -53,7 +54,7 @@
         }
         h4 {
             padding: 20px 0;
-            color: #00a94d;
+            color: $colorVerde;
             text-align: center;
         }
     }

@@ -1,18 +1,27 @@
 /* Index Inicio */
+// Var
+$colorAzul: #1F253D;
+$marginTop: 15px;
+$bckgrndSomos: #F5F5F5;
+$bckgrndCursos: #E3ECEB;
+$bckgrndIndustria: #EEF4F2;
+
 .container article {
     padding: 20px ;
 }
-.container article.somos {
-    background-color: #F5F5F5;
-}
-.container article.cursos {
-    background-color: #E3ECEB;
-}
-.container article.industria {
-    background-color: #EEF4F2;
+// Map
+$bckgndColor: (
+    somos: $bckgrndSomos,
+    cursos: $bckgrndCursos,
+    industria: $bckgrndIndustria,
+);
+@each $nombre, $colorBackground in $bckgndColor {
+    .container article.#{$nombre} {
+        background-color: $colorBackground;
+    }
 }
 section article.servicios {
-    background-color: #1F253D;
+    background-color: $colorAzul;
     padding: 35px 0;
 }
 .img-right img {
@@ -20,16 +29,6 @@ section article.servicios {
 }
 .img-left img {
     border-radius: 0 20px 20px 20px;
-}
-.txt-center {
-    margin: auto !important;
-}
-.txt-left, .txt-right {
-    color: #1F253D;
-}
-.txt-left p, .txt-right p,
-.titleServicios p {
-    margin-top: 15px;
 }
 .txt-left {
     text-align: initial;
@@ -39,6 +38,31 @@ section article.servicios {
     text-align: end;
     padding-left: 15px;
 }
+.txt-center {
+    margin: auto !important;
+}
+// Mixin
+@mixin fuente($colorAzul) {
+    color: $colorAzul;
+}
+.txt-right {
+    @include fuente($colorAzul)
+}
+.txt-left {
+    @include fuente($colorAzul)
+}
+@mixin marginTop($marginTop) {
+    margin-top: 15px;
+}
+.txt-left p {
+    @include marginTop($marginTop)
+}
+.txt-right p{
+    @include marginTop($marginTop)
+}
+.titleServicios p{
+    @include marginTop($marginTop)
+}
 .servicios {
     padding: 30px;
     .titleServicios {
@@ -46,10 +70,16 @@ section article.servicios {
         color: #F6FFFC;
     }
 }
+// Map
+$estilos: (
+    bckgndColor: #F6FAFD,
+    bRadius: 20px,
+
+);
 .cServicios > div  {
-    background-color: #F6FAFD;
-    border-radius: 20px;
-    color: #1F253D;
+    background-color: map-get($estilos, bckgndColor);
+    border-radius: map-get($estilos, bRadius);
+    color: $colorAzul;
 }
 .serviciosCard {
     margin-top: 30px !important;

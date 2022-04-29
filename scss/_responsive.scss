@@ -23,7 +23,7 @@
 }
 /* Small Devices, Nav */
 @media (max-width : 767px) {
-    .dply, .check-btn, .checkbtn{
+    .check-btn, .checkbtn{
         display: block;
     }
     .enlace{
@@ -33,7 +33,7 @@
         position: fixed;
         width: 100%;
         height: 100vh;
-        background: #1f253d;
+        background: $colorAzul;
         top: 120px;
         left: -100%;
         text-align: center;
@@ -44,15 +44,15 @@
             letter-spacing: 3px;
             &:hover {
                 background-size: 100% 2px;
-                color: #00a94d;
+                color: $colorVerde;
             }
             &:focus {
                 background-size: 100% 2px;
-                color: #00a94d;
+                color: $colorVerde;
             }
             &:active {
                 background-size: 100% 2px;
-                color: #00a94d;
+                color: $colorVerde;
             }
         }
     }
@@ -87,11 +87,21 @@
         width: 250px;
         margin: 30px auto;
     }
-    .cServicios,
-    .area,
-    .fContainer,
+    //Mixin
+    @mixin flexColumn($flexDirection) {
+        flex-direction: $flexDirection;
+    }
+    .cServicios {
+        @include flexColumn(column)
+    }
+    .area {
+        @include flexColumn(column)
+    }
+    .fContainer {
+        @include flexColumn(column)
+    }
     .footerMenu ul {
-        flex-direction: column;
+        @include flexColumn(column)
     }
     .teamImg {
         background-size: contain;
@@ -138,7 +148,7 @@
 @media (min-width : 680px) {
     .area > div {
         width: 50%;
-        color: #1F253D;
+        color: $colorAzul;
         margin: auto;
     }
     .formIcon {
@@ -190,14 +200,17 @@
 @media (min-width : 768px) {
     nav ul li {
         display: inline-block;
-    }
-    nav ul li a:hover {
-        color: #1f253d;
-        text-decoration: underline;
-        transition: all .2s;
-    }
-    nav ul li a:hover, nav ul li a:focus {
-        background-size: 100% 2px;
+        a {
+            &:hover {
+            color: $colorAzul;
+            text-decoration: underline;
+            transition: all .2s;
+            background-size: 100% 2px;
+            }
+            &:focus{
+                background-size: 100% 2px;
+            }
+        }
     }
     .dply {
         display: none;

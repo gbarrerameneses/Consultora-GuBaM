@@ -1,35 +1,50 @@
 /* Banner */
+$colorTitle: #e5e5e5;
+$espacioLetras: 3px;
+
+$colorNegro: #000;
+// Map
+$varBanner:(
+    posicionRel: relative,
+    colorFondo: $colorNegro,
+    ordenPosicion: -1,
+    posicionFondo: center,
+    repeticionFondo: no-repeat,
+    tamanioFondo: cover,
+    opacidad: .5,
+    margenIzq: -15px,
+    alto: 500px,
+    posicionAbs: absolute,
+    arriba: 55%,
+    izq: 50%,
+    transformacion: translate(-50%, -50%),
+    textoTransformacion: uppercase,
+    ancho: 100%,
+    relleno: 0 15px,
+    textoAlineado: center,
+);
 .fondo {
-    position: relative;
-    background-color: #000;
-    z-index: -1;
+    position: map-get($varBanner, posicionRel);
+    background-color: map-get($varBanner, colorFondo);
+    z-index: map-get($varBanner, ordenPosicion);
 }
 .img-header {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: .5;
-    margin-left: -15px;
+    background-position: map-get($varBanner, posicionFondo);
+    background-repeat: map-get($varBanner, repeticionFondo);
+    background-size: map-get($varBanner, tamanioFondo);
+    opacity: map-get($varBanner, opacidad);
+    margin-left: map-get($varBanner, margenIzq);
+    height: map-get($varBanner, alto);
 }
 .texto-header {
-    position: absolute;
-    top: 55%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-transform: uppercase;
-    width: 100%;
-    padding: 0 15px;
-    text-align: center;
-}
-.texto-header h1 {
-    color: #e5e5e5;
-    font-size: 40px;
-    letter-spacing: 3px;
-}
-.texto-header h2 {
-    color: #e5e5e5;
-    font-size: 45px;
-    letter-spacing: 3px;
+    position: map-get($varBanner, posicionAbs);
+    top: map-get($varBanner, arriba);
+    left: map-get($varBanner, izq);
+    transform: map-get($varBanner, transformacion);
+    text-transform: map-get($varBanner, textoTransformacion);
+    width: map-get($varBanner, ancho);
+    padding: map-get($varBanner, relleno);
+    text-align: map-get($varBanner, textoAlineado);
 }
 .btn-green {
     background-color: #00a94d !important;
@@ -38,18 +53,32 @@
     border: 1px solid #00a94d !important;
     margin-top: 15px;
     cursor: pointer;
+    &:hover {
+        background-color: #1f253d !important;
+        border: 1px solid #00a94d !important;
+        color: #00a94d !important;
+    }
+    a {
+        color: $colorTitle;
+        &:hover {
+            color: $colorVerde;
+        }
+    }
 }
-.btn-green a {
-    color: #e5e5db;
+// Mixin
+@mixin textoHeader($colorTitle, $espacioLetras) {
+    color: $colorTitle;
+    letter-spacing: $espacioLetras;
 }
-.btn-green:hover {
-    background-color: #1f253d !important;
-    border: 1px solid #00a94d !important;
-    color: #00a94d !important;
+.texto-header h1 {
+    @include textoHeader($colorTitle, $espacioLetras)
 }
-.btn-green a:hover {
-    color: #00a94d;
+.texto-header h2 {
+    @include textoHeader($colorTitle, $espacioLetras)
 }
-.img-header {
-    height: 500px;
+.texto-header h1 {
+    font-size: 40px;
+}
+.texto-header h2 {
+    font-size: 45px
 }

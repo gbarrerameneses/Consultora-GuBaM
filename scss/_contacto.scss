@@ -2,7 +2,7 @@
 .titleIndustria {
     text-align: center;
     padding: 40px 15px;
-    color: #1F253D;
+    color: $colorAzul;
 }
 .imgContact {
     background-color: #F6FFFC;
@@ -26,15 +26,15 @@
             outline: none;
         }
     }
-}
-.formIcon fieldset textarea {
-    border-radius: 10px;
-    padding: 9px 0 10px 12px;
-    outline: none;
-}
-.formIcon img {
-    width: 8%;
-    margin-right: 8px;
+    fieldset textarea {
+        border-radius: 10px;
+        padding: 9px 0 10px 12px;
+        outline: none;
+    }
+    img {
+        width: 8%;
+        margin-right: 8px;
+    }
 }
 .btn-center {
     margin: 14px auto !important;

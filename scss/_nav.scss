@@ -1,6 +1,8 @@
 /*  Nav*/
+$colorVerde: #00a94d;
+$colorBlanco: #fff;
 nav{
-    background: #00a94d;
+    background: $colorVerde;
     height: 120px;
     width: 100%;
     position: fixed;
@@ -11,7 +13,7 @@ nav{
         li{
             line-height: 90px;
             a{
-                color: #fff;
+                color: $colorBlanco;
                 font-size: 18px;
                 padding: 7px;
                 border-radius: 3px;
@@ -43,7 +45,7 @@ nav{
 }
 .checkbtn{
     font-size: 30px;
-    color: #fff;
+    color: $colorBlanco;
     float: right;
     line-height: 80px;
     margin-right: 10px;

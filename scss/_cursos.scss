@@ -4,7 +4,7 @@
     justify-content: start;
     align-items: center;
     padding: 15px;
-    color: #1F253D;
+    color: $colorAzul;
 }
 .grid-container {
     display: grid;
@@ -13,7 +13,7 @@
     .cursoCard {
         background-color: #F6FAFD;
         border-radius: 20px;
-        color: #1F253D;
+        color: $colorAzul;
     }
 }
 /* Cursos Inicio */
